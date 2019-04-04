@@ -10,7 +10,7 @@ jobs:
             - image: circleci/node:10-jessie
 
         steps:
-            - git clone https://github.com/mihaiserban/teleporthq-perf-stats.git . # checkout perf stats repo contents
+            - run: git clone https://github.com/mihaiserban/teleporthq-perf-stats.git . # checkout perf stats repo contents
             - run:
                   name: Installing NPM dependencies
                   working_directory: ~/build
